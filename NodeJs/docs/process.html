@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>http://api.nodejs.cn/ | 潇湘</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.7188e497.css" as="style"><link rel="preload" href="/assets/js/app.3b769717.js" as="script"><link rel="preload" href="/assets/js/2.edd7a9f8.js" as="script"><link rel="preload" href="/assets/js/50.4a650867.js" as="script"><link rel="prefetch" href="/assets/js/10.9322cdd2.js"><link rel="prefetch" href="/assets/js/11.3ab9991c.js"><link rel="prefetch" href="/assets/js/12.a2d48798.js"><link rel="prefetch" href="/assets/js/13.0a75bf7f.js"><link rel="prefetch" href="/assets/js/14.f5d90c1a.js"><link rel="prefetch" href="/assets/js/15.8342f6d9.js"><link rel="prefetch" href="/assets/js/16.705c7656.js"><link rel="prefetch" href="/assets/js/17.8ad6b8d9.js"><link rel="prefetch" href="/assets/js/18.33349044.js"><link rel="prefetch" href="/assets/js/19.a21d09f5.js"><link rel="prefetch" href="/assets/js/20.37454804.js"><link rel="prefetch" href="/assets/js/21.7c17c85a.js"><link rel="prefetch" href="/assets/js/22.b153bf95.js"><link rel="prefetch" href="/assets/js/23.f07e1924.js"><link rel="prefetch" href="/assets/js/24.38eecd44.js"><link rel="prefetch" href="/assets/js/25.0ce6fe47.js"><link rel="prefetch" href="/assets/js/26.21c966b1.js"><link rel="prefetch" href="/assets/js/27.d5b9a48f.js"><link rel="prefetch" href="/assets/js/28.7abdc826.js"><link rel="prefetch" href="/assets/js/29.f5f0b8df.js"><link rel="prefetch" href="/assets/js/3.f3fb27aa.js"><link rel="prefetch" href="/assets/js/30.98025888.js"><link rel="prefetch" href="/assets/js/31.7a1b5725.js"><link rel="prefetch" href="/assets/js/32.59132f98.js"><link rel="prefetch" href="/assets/js/33.fc0c9448.js"><link rel="prefetch" href="/assets/js/34.8ff69270.js"><link rel="prefetch" href="/assets/js/35.9bd65d91.js"><link rel="prefetch" href="/assets/js/36.89ef9647.js"><link rel="prefetch" href="/assets/js/37.535978dd.js"><link rel="prefetch" href="/assets/js/38.b172678f.js"><link rel="prefetch" href="/assets/js/39.cdb4eda6.js"><link rel="prefetch" href="/assets/js/4.3f167e45.js"><link rel="prefetch" href="/assets/js/40.df12d60f.js"><link rel="prefetch" href="/assets/js/41.7f42acc2.js"><link rel="prefetch" href="/assets/js/42.e0ae0241.js"><link rel="prefetch" href="/assets/js/43.a3342e73.js"><link rel="prefetch" href="/assets/js/44.b6d126a7.js"><link rel="prefetch" href="/assets/js/45.e8705d6e.js"><link rel="prefetch" href="/assets/js/46.df1fa088.js"><link rel="prefetch" href="/assets/js/47.b67fd1a7.js"><link rel="prefetch" href="/assets/js/48.0b85901a.js"><link rel="prefetch" href="/assets/js/49.c357ced9.js"><link rel="prefetch" href="/assets/js/5.42fb109f.js"><link rel="prefetch" href="/assets/js/51.35d87b5a.js"><link rel="prefetch" href="/assets/js/52.bc776f8a.js"><link rel="prefetch" href="/assets/js/53.297ce441.js"><link rel="prefetch" href="/assets/js/54.adde707f.js"><link rel="prefetch" href="/assets/js/55.00c6e2a9.js"><link rel="prefetch" href="/assets/js/56.717b2f2e.js"><link rel="prefetch" href="/assets/js/57.17a1ac89.js"><link rel="prefetch" href="/assets/js/58.ce8deb46.js"><link rel="prefetch" href="/assets/js/59.771706ba.js"><link rel="prefetch" href="/assets/js/6.180e369a.js"><link rel="prefetch" href="/assets/js/60.81c59474.js"><link rel="prefetch" href="/assets/js/61.a3a2192d.js"><link rel="prefetch" href="/assets/js/62.b55432fc.js"><link rel="prefetch" href="/assets/js/7.788e761e.js"><link rel="prefetch" href="/assets/js/8.d41a4e15.js"><link rel="prefetch" href="/assets/js/9.115eeb4b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7188e497.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">潇湘</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/links/" class="nav-link">
+  Friend
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><a href="/links/" class="nav-link">
+  Friend
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Jsbooks</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Javascript Mdn</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Nodejs</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>Docs</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/NodeJs/docs/process.html" aria-current="page" class="active sidebar-link">http://api.nodejs.cn/</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/NodeJs/docs/process.html#http-api-nodejs-cn" class="sidebar-link">http://api.nodejs.cn/</a></li><li class="sidebar-sub-header"><a href="/NodeJs/docs/process.html#http-nodejs-cn-api-v16-process-process-argv-html" class="sidebar-link">http://nodejs.cn/api-v16/process/process_argv.html</a></li><li class="sidebar-sub-header"><a href="/NodeJs/docs/process.html#process" class="sidebar-link">process</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Nvm</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>深入浅出node.js 朴灵</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Ecma</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Eslint</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Typescript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>V8.dev</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="http-api-nodejs-cn"><a href="#http-api-nodejs-cn" class="header-anchor">#</a> http://api.nodejs.cn/</h2> <p>node官网支持搜索具体命令</p> <h2 id="http-nodejs-cn-api-v16-process-process-argv-html"><a href="#http-nodejs-cn-api-v16-process-process-argv-html" class="header-anchor">#</a> http://nodejs.cn/api-v16/process/process_argv.html</h2> <p>process.argv 属性返回数组，其中包含启动 Node.js 进程时传入的命令行参数。 第一个元素将是 process.execPath。
+如果需要访问 argv[0] 的原始值，请参阅 process.argv0。 第二个元素将是正在执行的 JavaScript 文件的路径。 其余元素将是任何其他命令行参数。</p> <h1 id=""><a href="#" class="header-anchor">#</a></h1> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'npm run new input'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">argv</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'D:\\Program\\nodejs\\node.exe'</span><span class="token punctuation">,</span>
+    <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui\\build\\bin\\new.js'</span><span class="token punctuation">,</span>
+    <span class="token string">'input'</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+</code></pre></div><h2 id="process"><a href="#process" class="header-anchor">#</a> process</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code> process <span class="token punctuation">{</span>
+  <span class="token literal-property property">version</span><span class="token operator">:</span> <span class="token string">'v16.13.2'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">versions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">node</span><span class="token operator">:</span> <span class="token string">'16.13.2'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">v8</span><span class="token operator">:</span> <span class="token string">'9.4.146.24-node.14'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">uv</span><span class="token operator">:</span> <span class="token string">'1.42.0'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">zlib</span><span class="token operator">:</span> <span class="token string">'1.2.11'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">brotli</span><span class="token operator">:</span> <span class="token string">'1.0.9'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">ares</span><span class="token operator">:</span> <span class="token string">'1.18.1'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token string">'93'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">nghttp2</span><span class="token operator">:</span> <span class="token string">'1.45.1'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">napi</span><span class="token operator">:</span> <span class="token string">'8'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">llhttp</span><span class="token operator">:</span> <span class="token string">'6.0.4'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">openssl</span><span class="token operator">:</span> <span class="token string">'1.1.1l+quic'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">cldr</span><span class="token operator">:</span> <span class="token string">'39.0'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">icu</span><span class="token operator">:</span> <span class="token string">'69.1'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">tz</span><span class="token operator">:</span> <span class="token string">'2021a'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">unicode</span><span class="token operator">:</span> <span class="token string">'13.0'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">ngtcp2</span><span class="token operator">:</span> <span class="token string">'0.1.0-DEV'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">nghttp3</span><span class="token operator">:</span> <span class="token string">'0.1.0-DEV'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">arch</span><span class="token operator">:</span> <span class="token string">'x64'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">platform</span><span class="token operator">:</span> <span class="token string">'win32'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">release</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'node'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">lts</span><span class="token operator">:</span> <span class="token string">'Gallium'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">sourceUrl</span><span class="token operator">:</span> <span class="token string">'https://nodejs.org/download/release/v16.13.2/node-v16.13.2.tar.gz'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">headersUrl</span><span class="token operator">:</span> <span class="token string">'https://nodejs.org/download/release/v16.13.2/node-v16.13.2-headers.tar.gz'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">libUrl</span><span class="token operator">:</span> <span class="token string">'https://nodejs.org/download/release/v16.13.2/win-x64/node.lib'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_rawDebug</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> _rawDebug<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">moduleLoadList</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'Internal Binding native_module'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding errors'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/errors'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding config'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding constants'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding util'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding types'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/util'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/util/types'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/assert'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/validators'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding icu'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/util/inspect'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule events'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding buffer'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding string_decoder'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/buffer'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding blob'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/encoding'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding symbols'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding messaging'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/worker/js_transferable'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/blob'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule buffer'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/process/per_thread'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding process_methods'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding credentials'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding async_wrap'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding task_queue'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/async_hooks'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule async_hooks'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/process/promises'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/fixed_queue'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/process/task_queues'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding trace_events'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/constants'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/console/constructor'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/console/global'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/util/inspector'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding inspector'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/querystring'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule path'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule querystring'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding url'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/url'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/util/debuglog'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule util'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding performance'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/perf/utils'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/event_target'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/abort_controller'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding worker'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/end-of-stream'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/destroy'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/legacy'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/add-abort-signal'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/buffer_list'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/state'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule string_decoder'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/from'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/readable'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/writable'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/duplex'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/utils'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/pipeline'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/compose'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule stream/promises'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/transform'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/streams/passthrough'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule stream'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/worker/io'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding timers'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/linkedlist'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/priority_queue'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/timers'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule timers'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/perf/performance_entry'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/perf/observe'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/perf/nodetiming'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/perf/usertiming'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/perf/event_loop_utilization'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/histogram'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/perf/timerify'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/perf/performance'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/perf/event_loop_delay'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule perf_hooks'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/process/execution'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/process/warning'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding fs'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/fs/utils'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding fs_dir'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/fs/dir'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding fs_event_wrap'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding uv'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/fs/watchers'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule internal/fs/read_file_context'</span><span class="token punctuation">,</span>
+    <span class="token string">'NativeModule fs'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding serdes'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding profiler'</span><span class="token punctuation">,</span>
+    <span class="token string">'Internal Binding heap_utils'</span><span class="token punctuation">,</span>
+    <span class="token operator">...</span> <span class="token number">48</span> more items
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">binding</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> binding<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_linkedBinding</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> _linkedBinding<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_events</span><span class="token operator">:</span> <span class="token punctuation">[</span>Object<span class="token operator">:</span> <span class="token keyword">null</span> prototype<span class="token punctuation">]</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">newListener</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> startListeningIfSignal<span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">removeListener</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> stopListeningIfSignal<span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">warning</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> onWarning<span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">exit</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">Function</span> <span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token constant">SIGWINCH</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">Function</span> <span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_eventsCount</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_maxListeners</span><span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">domain</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_exiting</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">config</span><span class="token operator">:</span> <span class="token punctuation">[</span>Getter<span class="token operator">/</span>Setter<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">dlopen</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> dlopen<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">uptime</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> uptime<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_getActiveRequests</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> _getActiveRequests<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_getActiveHandles</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> _getActiveHandles<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">reallyExit</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> reallyExit<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_kill</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> _kill<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">cpuUsage</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> cpuUsage<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">resourceUsage</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> resourceUsage<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">memoryUsage</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> memoryUsage<span class="token punctuation">]</span> <span class="token punctuation">{</span> <span class="token literal-property property">rss</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> rss<span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">kill</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> kill<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">exit</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> exit<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">openStdin</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">Function</span> <span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">allowedNodeEnvironmentFlags</span><span class="token operator">:</span> <span class="token punctuation">[</span>Getter<span class="token operator">/</span>Setter<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">assert</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> deprecated<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">features</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">inspector</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">debug</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">uv</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">ipv6</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">tls_alpn</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">tls_sni</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">tls_ocsp</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">tls</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">cached_builtins</span><span class="token operator">:</span> <span class="token punctuation">[</span>Getter<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_fatalException</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">Function</span> <span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">setUncaughtExceptionCaptureCallback</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> setUncaughtExceptionCaptureCallback<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">hasUncaughtExceptionCaptureCallback</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> hasUncaughtExceptionCaptureCallback<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">emitWarning</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> emitWarning<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">nextTick</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> nextTick<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_tickCallback</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> runNextTicks<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_debugProcess</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> _debugProcess<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_debugEnd</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> _debugEnd<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_startProfilerIdleNotifier</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">Function</span> <span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_stopProfilerIdleNotifier</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">Function</span> <span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">stdout</span><span class="token operator">:</span> <span class="token punctuation">[</span>Getter<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">stdin</span><span class="token operator">:</span> <span class="token punctuation">[</span>Getter<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">stderr</span><span class="token operator">:</span> <span class="token punctuation">[</span>Getter<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">abort</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> abort<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">umask</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> wrappedUmask<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">chdir</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> wrappedChdir<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">cwd</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> wrappedCwd<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">env</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token constant">ALLUSERSPROFILE</span><span class="token operator">:</span> <span class="token string">'C:\\ProgramData'</span><span class="token punctuation">,</span>
+    <span class="token constant">APPDATA</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\zhuqizhong\\AppData\\Roaming'</span><span class="token punctuation">,</span>
+    <span class="token constant">BSPRINT_CLIENT</span><span class="token operator">:</span> <span class="token string">'C:/Users/Administrator/AppData/Roaming/Brocadesoft'</span><span class="token punctuation">,</span>
+    <span class="token constant">COLOR</span><span class="token operator">:</span> <span class="token string">'1'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">CommonProgramFiles</span><span class="token operator">:</span> <span class="token string">'C:\\Program Files\\Common Files'</span><span class="token punctuation">,</span>
+    <span class="token string-property property">'CommonProgramFiles(x86)'</span><span class="token operator">:</span> <span class="token string">'C:\\Program Files (x86)\\Common Files'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">CommonProgramW6432</span><span class="token operator">:</span> <span class="token string">'C:\\Program Files\\Common Files'</span><span class="token punctuation">,</span>
+    <span class="token constant">COMPUTERNAME</span><span class="token operator">:</span> <span class="token string">'BDR23M70BKCPR'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">ComSpec</span><span class="token operator">:</span> <span class="token string">'C:\\WINDOWS\\system32\\cmd.exe'</span><span class="token punctuation">,</span>
+    <span class="token constant">DEFLOGDIR</span><span class="token operator">:</span> <span class="token string">'C:\\ProgramData\\McAfee\\Endpoint Security\\Logs'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">DriverData</span><span class="token operator">:</span> <span class="token string">'C:\\Windows\\System32\\Drivers\\DriverData'</span><span class="token punctuation">,</span>
+    <span class="token constant">EDITOR</span><span class="token operator">:</span> <span class="token string">'notepad.exe'</span><span class="token punctuation">,</span>
+    <span class="token constant">HOME</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\zhuqizhong'</span><span class="token punctuation">,</span>
+    <span class="token constant">HOMEDRIVE</span><span class="token operator">:</span> <span class="token string">'C:'</span><span class="token punctuation">,</span>
+    <span class="token constant">HOMEPATH</span><span class="token operator">:</span> <span class="token string">'\\Users\\zhuqizhong'</span><span class="token punctuation">,</span>
+    <span class="token constant">INIT_CWD</span><span class="token operator">:</span> <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui'</span><span class="token punctuation">,</span>
+    <span class="token constant">LOCALAPPDATA</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\zhuqizhong\\AppData\\Local'</span><span class="token punctuation">,</span>
+    <span class="token constant">LOGONSERVER</span><span class="token operator">:</span> <span class="token string">'\\\\BGY-SD005'</span><span class="token punctuation">,</span>
+    <span class="token constant">MYSQL_HOME</span><span class="token operator">:</span> <span class="token string">'C:\\xiaoxiangPrograms\\mysql-8.0.28-winx64\\bin'</span><span class="token punctuation">,</span>
+    <span class="token constant">NODE</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node.exe'</span><span class="token punctuation">,</span>
+    <span class="token constant">NODE_EXE</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\\\node.exe'</span><span class="token punctuation">,</span>
+    <span class="token constant">NODE_OPTIONS</span><span class="token operator">:</span> <span class="token string">'--max-old-space-size=8192'</span><span class="token punctuation">,</span>
+    <span class="token constant">NODE_PATH</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node_global\\node_modules'</span><span class="token punctuation">,</span>
+    <span class="token constant">NPM_CLI_JS</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\\\node_modules\\npm\\bin\\npm-cli.js'</span><span class="token punctuation">,</span>
+
+    <span class="token literal-property property">npm_command</span><span class="token operator">:</span> <span class="token string">'run-script'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_cache</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node_cache'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_globalconfig</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node_global\\etc\\npmrc'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_global_prefix</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node_global'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_init_module</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\zhuqizhong\\.npm-init.js'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_local_prefix</span><span class="token operator">:</span> <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_metrics_registry</span><span class="token operator">:</span> <span class="token string">'https://npm.countrygarden.com.cn/'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_node_gyp</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_noproxy</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_prefix</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node_global'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_proxy</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_registry</span><span class="token operator">:</span> <span class="token string">'https://npm.countrygarden.com.cn/'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_strict_ssl</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_userconfig</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\zhuqizhong\\.npmrc'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_config_user_agent</span><span class="token operator">:</span> <span class="token string">'npm/8.1.2 node/v16.13.2 win32 x64 workspaces/false'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_execpath</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node_modules\\npm\\bin\\npm-cli.js'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_lifecycle_event</span><span class="token operator">:</span> <span class="token string">'new'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_lifecycle_script</span><span class="token operator">:</span> <span class="token string">'node build/bin/new.js &quot;input&quot;'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_node_execpath</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node.exe'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_package_json</span><span class="token operator">:</span> <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui\\package.json'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_package_name</span><span class="token operator">:</span> <span class="token string">'v5'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">npm_package_version</span><span class="token operator">:</span> <span class="token string">'1.0.0'</span><span class="token punctuation">,</span>
+    
+    <span class="token constant">NPM_PREFIX_NPM_CLI_JS</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node_global\\node_modules\\npm\\bin\\npm-cli.js'</span><span class="token punctuation">,</span>
+    <span class="token constant">NUMBER_OF_PROCESSORS</span><span class="token operator">:</span> <span class="token string">'8'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">OneDrive</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\zhuqizhong\\OneDrive'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">OneDriveConsumer</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\zhuqizhong\\OneDrive'</span><span class="token punctuation">,</span>
+    <span class="token constant">OS</span><span class="token operator">:</span> <span class="token string">'Windows_NT'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">Path</span><span class="token operator">:</span> <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui\\node_modules\\.bin;D:\\element-ui\\component-library\\v5\\node_modules\\.bin;D:\\element-ui\\component-library\\node_modules\\.bin;D:\\element-ui\\node_modules\\.bin;D:\\node_modules\\.bin;D:\\Program\\nodejs\\node_modules\\npm\\node_modules\\@npmcli\\run-script\\lib\\node-gyp-bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;D:\\Program\\nodejs\\;C:\\Users\\zhuqizhong\\AppData\\Roaming\\npm;D:\\installApp\\Scripts\\;D:\\installApp\\;C:\\Users\\zhuqizhong\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Program\\nodejs\\node_global;C:\\潇湘软件安装\\Microsoft VS Code\\bin;C:\\Users\\zhuqizhong\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\zhuqizhong\\.dotnet\\tools;C:\\xiaoxiangPrograms\\mysql-8.0.28-winx64\\bin\\bin;C:\\xiaoxiangPrograms\\mysql-8.0.28-winx64\\bin'</span><span class="token punctuation">,</span>
+    <span class="token constant">PATHEXT</span><span class="token operator">:</span> <span class="token string">'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'</span><span class="token punctuation">,</span>
+    <span class="token constant">PROCESSOR_ARCHITECTURE</span><span class="token operator">:</span> <span class="token string">'AMD64'</span><span class="token punctuation">,</span>
+    <span class="token constant">PROCESSOR_IDENTIFIER</span><span class="token operator">:</span> <span class="token string">'Intel64 Family 6 Model 158 Stepping 13, GenuineIntel'</span><span class="token punctuation">,</span>
+    <span class="token constant">PROCESSOR_LEVEL</span><span class="token operator">:</span> <span class="token string">'6'</span><span class="token punctuation">,</span>
+    <span class="token constant">PROCESSOR_REVISION</span><span class="token operator">:</span> <span class="token string">'9e0d'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">ProgramData</span><span class="token operator">:</span> <span class="token string">'C:\\ProgramData'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">ProgramFiles</span><span class="token operator">:</span> <span class="token string">'C:\\Program Files'</span><span class="token punctuation">,</span>
+    <span class="token string-property property">'ProgramFiles(x86)'</span><span class="token operator">:</span> <span class="token string">'C:\\Program Files (x86)'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">ProgramW6432</span><span class="token operator">:</span> <span class="token string">'C:\\Program Files'</span><span class="token punctuation">,</span>
+    <span class="token constant">PROMPT</span><span class="token operator">:</span> <span class="token string">'$P$G'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">PSModulePath</span><span class="token operator">:</span> <span class="token string">'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'</span><span class="token punctuation">,</span>
+    <span class="token constant">PUBLIC</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\Public'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">SystemDrive</span><span class="token operator">:</span> <span class="token string">'C:'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">SystemRoot</span><span class="token operator">:</span> <span class="token string">'C:\\WINDOWS'</span><span class="token punctuation">,</span>
+    <span class="token constant">TEMP</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\ZHUQIZ~1\\AppData\\Local\\Temp'</span><span class="token punctuation">,</span>
+    <span class="token constant">TMP</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\ZHUQIZ~1\\AppData\\Local\\Temp'</span><span class="token punctuation">,</span>
+    <span class="token constant">USERDNSDOMAIN</span><span class="token operator">:</span> <span class="token string">'COUNTRYGARDEN.COM.CN'</span><span class="token punctuation">,</span>
+    <span class="token constant">USERDOMAIN</span><span class="token operator">:</span> <span class="token string">'COUNTRYGARDEN'</span><span class="token punctuation">,</span>
+    <span class="token constant">USERDOMAIN_ROAMINGPROFILE</span><span class="token operator">:</span> <span class="token string">'COUNTRYGARDEN'</span><span class="token punctuation">,</span>
+    <span class="token constant">USERNAME</span><span class="token operator">:</span> <span class="token string">'zhuqizhong'</span><span class="token punctuation">,</span>
+    <span class="token constant">USERPROFILE</span><span class="token operator">:</span> <span class="token string">'C:\\Users\\zhuqizhong'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">windir</span><span class="token operator">:</span> <span class="token string">'C:\\WINDOWS'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'npm run new input'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">argv</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'D:\\Program\\nodejs\\node.exe'</span><span class="token punctuation">,</span>
+    <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui\\build\\bin\\new.js'</span><span class="token punctuation">,</span>
+    <span class="token string">'input'</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">execArgv</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">pid</span><span class="token operator">:</span> <span class="token number">14748</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">ppid</span><span class="token operator">:</span> <span class="token number">20300</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">execPath</span><span class="token operator">:</span> <span class="token string">'D:\\Program\\nodejs\\node.exe'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">debugPort</span><span class="token operator">:</span> <span class="token number">9229</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">hrtime</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> hrtime<span class="token punctuation">]</span> <span class="token punctuation">{</span> <span class="token literal-property property">bigint</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> hrtimeBigInt<span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">argv0</span><span class="token operator">:</span> <span class="token string">'node'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">_preload_modules</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">setSourceMapsEnabled</span><span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> setSourceMapsEnabled<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">mainModule</span><span class="token operator">:</span> Module <span class="token punctuation">{</span>
+    <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">'.'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">path</span><span class="token operator">:</span> <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui\\build\\bin'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">exports</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui\\build\\bin\\new.js'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">loaded</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">children</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">paths</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui\\build\\bin\\node_modules'</span><span class="token punctuation">,</span>
+      <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui\\build\\node_modules'</span><span class="token punctuation">,</span>
+      <span class="token string">'D:\\element-ui\\component-library\\v5\\juejin-element-ui\\node_modules'</span><span class="token punctuation">,</span>
+      <span class="token string">'D:\\element-ui\\component-library\\v5\\node_modules'</span><span class="token punctuation">,</span>
+      <span class="token string">'D:\\element-ui\\component-library\\node_modules'</span><span class="token punctuation">,</span>
+      <span class="token string">'D:\\element-ui\\node_modules'</span><span class="token punctuation">,</span>
+      <span class="token string">'D:\\node_modules'</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">[</span><span class="token function">Symbol</span><span class="token punctuation">(</span>kCapture<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/JavaScript-MDN/Web performance/performance/页面加载过程.html" class="prev">
+        /JavaScript-MDN/Web performance/performance/页面加载过程.html
+      </a></span> <span class="next"><a href="/NodeJs/nvm/nvm-node.html">
+        /NodeJs/nvm/nvm-node.html
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3b769717.js" defer></script><script src="/assets/js/2.edd7a9f8.js" defer></script><script src="/assets/js/50.4a650867.js" defer></script>
+  </body>
+</html>
